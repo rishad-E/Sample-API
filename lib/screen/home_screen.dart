@@ -26,7 +26,10 @@ class HomeScreen extends StatelessWidget {
                     itemCount: APIs.userList.length,
                     itemBuilder: (BuildContext context, int index) {
                       return UserTileWidget(
+                        //set id inside avatar
                         avatar: APIs.userList[index].id.toString(),
+
+                        //to set the first letter from the title inside the avatar
                         // avatar: APIs.userList[index].title![0],
                         name: APIs.userList[index].title.toString(),
                         email: APIs.userList[index].body.toString(),
